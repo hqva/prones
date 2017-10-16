@@ -62,7 +62,7 @@ def generate_cells(move_rat):
             focus = 2*np.pi*np.random.rand()
             for i in range(move_rat.shape[1]):
                 rat_now = move_rat[0,i]
-                dist = np.linalg.norm(rat_now - focus)
+                dist =m np.linalg.norm(rat_now - focus)
                 cell_out[j,i] = int(round(dist*np.random.chisquare(2)))
         return cell_out
     def rand_cell(num_c,move_rat):
